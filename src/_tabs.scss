@@ -1,0 +1,74 @@
+.tabs {
+  background: $dark-color;
+  padding-top: 1rem;
+  border-bottom: 3px solid #3d3d3d;
+  .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    > div {
+      padding: 1.5rem;
+    }
+    > div:hover {
+      color: #fff;
+      cursor: pointer;
+    }
+  }
+  p {
+    font-size: 1.2rem;
+    padding-top: 0.5rem;
+  }
+}
+
+.tab-border {
+  border-bottom: $primary-color 4px solid;
+}
+
+.tab-content {
+  padding: 3rem 0;
+  background: #000;
+  color: #fff;
+}
+
+// Hides content initially
+
+#tab-1-content,
+#tab-2-content,
+#tab-3-content {
+  display: none;
+}
+
+.show {
+  display: block !important;
+}
+
+#tab-1-content {
+  .tab-1-content-inner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+#tab-2-content {
+  .tab-2-content-top {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+  }
+  .tab-2-content-bottom {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
