@@ -1,2 +1,2 @@
-[publish]
-    dir = "dist"
+[build]
+    publish = "/dist"
